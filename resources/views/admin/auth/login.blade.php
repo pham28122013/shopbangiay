@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="checkbox" id="remember" name="remember"> 
-                                    <label for="remember">Nhớ tài khoản</label>
+                                    <label for="remember"></label>
                                 </div>
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Đăng nhập</button>
                             </fieldset>                           

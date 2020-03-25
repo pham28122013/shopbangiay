@@ -51,152 +51,216 @@
     
 
 <?php
-$x = 0;
+// $x = 0;
 
-while($x <= 100) {
-    echo "The number is: $x <br>";
-    $x+=10;
-}
+// while($x <= 100) {
+//     echo "The number is: $x <br>";
+//     $x+=10;
+// }
 
-$x = 1; 
+// $x = 1; 
 
-do {
-    echo "The number is: $x <br>";
-    $x++;
-} while ($x <= 5);
+// do {
+//     echo "The number is: $x <br>";
+//     $x++;
+// } while ($x <= 5);
 
 
-$a = array(0,1,2,5,7,4,6);
-sort($a);
-for($i=0;$i<=count($a);$i++){
-    if($i % 2 == 0) {
-        echo $i;
-    }
-}
-echo "<br>";
-for($i=0;$i<=10;$i++){
-    if($i % 2 == 0) {
-        echo $i;
-    }
-}
-echo "<br>";
-$numbers = array(4, 6, 2, 22, 11);
-sort($numbers);
+// $a = array(0,1,2,5,7,4,6);
+// sort($a);
+// for($i=0;$i<=count($a);$i++){
+//     if($i % 2 == 0) {
+//         echo $i;
+//     }
+// }
+// echo "<br>";
+// for($i=0;$i<=10;$i++){
+//     if($i % 2 == 0) {
+//         echo $i;
+//     }
+// }
+// echo "<br>";
+// $numbers = array(4, 6, 2, 22, 11);
+// sort($numbers);
 
-$arrlength = count($numbers);
-for($x = 0; $x < 5; $x++) {
-echo $numbers[$x];
-echo "<br>";
-}
-echo "<br>";
-function tinhtong($n)
-{
-    if ($n == 1){ return $n; }
-    return $n + tinhtong($n-1);
-}
-echo tinhtong(10);
-echo "<br>";
-function tinhtongl($n){
-    $tong = 0;
-    for ($i = 1; $i <= $n; $i++){
-        $tong += $i; // mỗi vòng lặp cộng lại với nhau
-    }
-    return $tong;
-}
-echo tinhtongl(10);
-echo "<br>";
-$mang = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
+// $arrlength = count($numbers);
+// for($x = 0; $x < 5; $x++) {
+// echo $numbers[$x];
+// echo "<br>";
+// }
+// echo "<br>";
+// function tinhtong($n)
+// {
+//     if ($n == 1){ return $n; }
+//     return $n + tinhtong($n-1);
+// }
+// echo tinhtong(10);
+// echo "<br>";
+// function tinhtongl($n){
+//     $tong = 0;
+//     for ($i = 1; $i <= $n; $i++){
+//         $tong += $i; // mỗi vòng lặp cộng lại với nhau
+//     }
+//     return $tong;
+// }
+// echo tinhtongl(10);
+// echo "<br>";
+// $mang = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
   
-$can_tim = 67;
+// $can_tim = 67;
   
-for ($i = 0; $i < count($mang); $i++){ // duyệt qua từng phần tử của mảng
-    if ($mang[$i] == $can_tim){ // và so sánh xem có bằng số 67 không, nếu có thì xuất ra màn hình và dừng vòng lặp
-        echo 'Số ' . $can_tim . ' có nằm trong mảng tại ví trí thứ ' . $i;
-        break;
-    }
-}
-echo "<br>";
-$manga = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
+// for ($i = 0; $i < count($mang); $i++){ // duyệt qua từng phần tử của mảng
+//     if ($mang[$i] == $can_tim){ // và so sánh xem có bằng số 67 không, nếu có thì xuất ra màn hình và dừng vòng lặp
+//         echo 'Số ' . $can_tim . ' có nằm trong mảng tại ví trí thứ ' . $i;
+//         break;
+//     }
+// }
+// echo "<br>";
+// $manga = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
   
-$can_tima = 6;
-function kiem_tra($manga, $can_tima)
-{
-    for ($i = 0; $i < count($manga); $i++){ // duyệt qua từng phần tử của mảng
-        if ($manga[$i] == $can_tima){ // và so sánh xem có bằng số 67 không, nếu có thì xuất ra màn hình
-            echo 'Số ' . $can_tima . ' có nằm trong mảng tại ví trí thứ ' . $i;
-        }
-    }
-    return false; // sau khi lặp hết mà ko có thì return về false
-}
-kiem_tra($manga, $can_tima);
+// $can_tima = 6;
+// function kiem_tra($manga, $can_tima)
+// {
+//     for ($i = 0; $i < count($manga); $i++){ // duyệt qua từng phần tử của mảng
+//         if ($manga[$i] == $can_tima){ // và so sánh xem có bằng số 67 không, nếu có thì xuất ra màn hình
+//             echo 'Số ' . $can_tima . ' có nằm trong mảng tại ví trí thứ ' . $i;
+//         }
+//     }
+//     return false; // sau khi lặp hết mà ko có thì return về false
+// }
+// kiem_tra($manga, $can_tima);
 
-echo "<br>";
-$mangg = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
+// echo "<br>";
+// $mangg = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
   
-$cantim = 4;
-for($i=0;$i<count($mang);$i++){
-	if($mangg[$i] == $cantim){
-		echo "So" .$cantim. "co ton tai o vi tri" .$i;
-	}
-}
+// $cantim = 4;
+// for($i=0;$i<count($mang);$i++){
+// 	if($mangg[$i] == $cantim){
+// 		echo "So" .$cantim. "co ton tai o vi tri" .$i;
+// 	}
+// }
 
-echo "<br>";
-$b = 10;
-$c = 15;
-$d = 20;
+// echo "<br>";
+// $b = 10;
+// $c = 15;
+// $d = 20;
 
-function tim_max($d, $b, $c)
-{
-    $max = $d;
-    if ($max < $b){
-        $max = $b;
-    }
-    if ($max < $c){
-        $max = $c;
-    }
-    return $max;
-}
-echo tim_max($d, $b, $c);
+// function tim_max($d, $b, $c)
+// {
+//     $max = $d;
+//     if ($max < $b){
+//         $max = $b;
+//     }
+//     if ($max < $c){
+//         $max = $c;
+//     }
+//     return $max;
+// }
+// echo tim_max($d, $b, $c);
 
-$mang = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
-function tim_min($mang)
-{
-    // Đếm tổng số phần tử
-    $total = count($mang);
+// $mang = array(321,312,3,4,5,45,56,5,67,6,787,8,7,2);
+// function tim_min($mang)
+// {
+//     // Đếm tổng số phần tử
+//     $total = count($mang);
   
-    // Gọi min là lính cầm canh
-    // lúc đầu chọn vị trí số 0 ngồi canh
-    $min = 100;
+//     // Gọi min là lính cầm canh
+//     // lúc đầu chọn vị trí số 0 ngồi canh
+//     $min = 100;
   
-    // Duyệt lần lượt các phần tử
-    for ($i = 0; $i > $total; $i++ )
+//     // Duyệt lần lượt các phần tử
+//     for ($i = 0; $i > $total; $i++ )
+//     {
+//         // Nếu phần tử cầm canh lớn hơn phần tử thứ $i thì
+//         // lấy vị trí $i ngồi canh
+//         if ($mang[$min] > $mang[$i]){
+//             $min = $i;
+//         }
+//     }
+  
+//     // Trả về vị trí nhỏ nhất
+//     return $min;
+// }
+// echo tim_min($mang);
+// echo "<br>";
+
+// function cohieu(){
+// 	$a = false;
+// 	for($i=0;$i<1000;$i++){
+// 		if ($i % 40 == 0){
+// 			$a = true;
+// 		}
+// 	}
+// 	if ($a = true){
+// 		echo "co";
+// 	}
+// 	else {
+// 		echo 'ko';
+// 	}
+// }
+// cohieu();
+// echo "<br>";
+// $a = 50;
+// $b = "10";
+// $c = $a + $b;
+// echo $c;
+// echo "<br>";
+$mang = [321,312,5,67,6,787,8,7,2];
+
+echo $mang[0];
+
+$numbers = array( 8 ,1, 2, 3, 4, 5);
+echo $numbers[0];
+    foreach( $numbers as $key=>$value )
     {
-        // Nếu phần tử cầm canh lớn hơn phần tử thứ $i thì
-        // lấy vị trí $i ngồi canh
-        if ($mang[$min] > $mang[$i]){
-            $min = $i;
-        }
-    }
-  
-    // Trả về vị trí nhỏ nhất
-    return $min;
-}
-echo tim_min($mang);
-echo "<br>";
+		$key += 1;
+        echo $key . $value;
+	}
+	echo "<br>";	
+$dong = array("volvo" => 3, "bmw" => 2, "toyota" => 1);
+$dong["bmw"]=5;
+foreach( $dong as $key=>$value )
+    {
+        echo $key . $value;
+	}
+	echo "<br>";
+	$diemdanhgia = array( 
+		"volvo" => array
+		(
+			"mausac" => 7,
+			"kieudang" => 8,  
+			"tocdo" => 9
+		),
+	
+		"bmw" => array
+		(
+			"mausac" => 7,
+			"kieudang" => 9,
+			"tocdo" => 6
+		),
+	
+		"toyota" => array
+		(
+			"mausac" => 8,
+			"kieudang" => 8,
+			"tocdo" => 9
+		)
+	);
+	echo $diemdanhgia['volvo']['kieudang'] . ""; 
 
-function cohieu(){
-	$a = false;
-	for($i=0;$i<1000;$i++){
-		if ($i % 40 == 0){
-			$a = true;
+	echo "<br>";
+	$a = 10;
+	$b = 15;
+	$c = 20;
+	function timmax($a, $b, $c){
+		$max = $a;
+		if($max < $b){
+			$max = $b;
 		}
+		if($max < $c){
+			$max= $c;
+		}
+		return $max;
 	}
-	if ($a = true){
-		echo "co";
-	}
-	else {
-		echo 'ko';
-	}
-}
-cohieu();
+echo timmax($a, $b, $c);
 ?>
