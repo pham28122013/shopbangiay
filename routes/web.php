@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/react', function () {
+    return view('welcome');
+});
 Route::get('/section','SectionController@index');
 Route::namespace('Frontend')->group(function () {
     Route::get('/','ProductController@index')->name('home.index');
